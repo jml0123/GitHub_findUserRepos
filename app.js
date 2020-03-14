@@ -19,7 +19,7 @@ const handleFormSubmit = () => {
             throw new Error(userData.message); 
           }
     }
-    catch {
+    catch(error) {
         console.log(error);
         document.querySelector(".results-list").innerHTML += 
             `<div>
@@ -28,6 +28,7 @@ const handleFormSubmit = () => {
             <br>Could not find the specified user.
             </p>
             </div>`;
+            return;
         }
 
     console.log(userData)
@@ -40,7 +41,6 @@ const listUserRepos = (data) => {
         const link = obj.html_url;
         appendToList(name, link);
     })
-
 }
 
 const appendToList = (repoName, repoLink) => {
