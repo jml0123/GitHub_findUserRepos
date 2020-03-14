@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif
+
+}
+header{
+    margin: 3.33% auto;
+    text-align: center;
+    font-size: 105%;
+}
+
+header > h1 {
+    margin: 0 auto;
+}
+
+section {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-size: 100%;
+}
+
+button {
+    font-size: 75%;
+    border-radius: 20px;
+    min-width: 100px;
+}
+
+.results-container h2 {
+    margin: 2.5% 0 0 0;
+}
+
+
+.results {
+    max-width: 1000px;
+    margin: 1% auto;
+    box-shadow: -4px -4px 33px rgba(12, 12, 12, 0.1);
+
+}
+
+ul {
+    cursor: default;
+    padding: 4%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+ul li {
+    text-align: left;
+    list-style-type: none;
+    color: black;
+    margin: 0.5% auto;
+    font-size: 100%;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: nowrap;
+
+}
+
+li > * {
+    margin: 0 0.5em;
+}
+
+li p::before {
+    content: ">";
+    color: darkgrey;
+    margin: 0 1em;
+}
+li a {
+    cursor: pointer;
+    color: #529fce;
+    display: inline-block;
+}
+li a:hover {
+    color: grey;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+form > * {
+    display: block;
+    text-align: left;
+    margin: 0.33%;
+    padding: 5px; 
+}
+form {
+    font-size: 120%;
+}
+
+form >input {
+    padding-left: 0.66%;
+}
+
+form > button {
+    padding: 2.5px;
+    text-align: center;
+}

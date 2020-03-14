@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Github Repo Lister</title>
+</head>
+<body>
+    <header>
+        <h1>List User's Repos</h1>
+        <p>Sample app using GitHub API</p>
+    </header>
+    <section role="main">
+        <form>
+            <label for="searchUserField">Search for a GitHub User:</label>
+            <input type="text" placeholder="Github Username" id="searchUserField">
+            <button type="submit">Get Repos</button>
+        </form>
+        <div class="results-container">
+            <h2>Repo List</h2>
+            <div class="results">
+                <ul class="results-list">
+                    <i>Search for a GitHub username to list their repos</i>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
